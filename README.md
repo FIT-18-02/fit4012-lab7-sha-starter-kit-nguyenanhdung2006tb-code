@@ -1,6 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tWL_cAyH)
 # FIT4012 - Lab 7: SHA-256 Starter Repository
 
+## Thông tin sinh viên / Student Info
+- **Họ và tên:** Nguyễn Anh Dũng
+- **Mã sinh viên:** 1871020167
+- **Lớp:** CNTT-1802
+- **Trường:** Đại học Đại Nam
+
+---
+
 ## 1. Cấu trúc repo
 
 ```text
