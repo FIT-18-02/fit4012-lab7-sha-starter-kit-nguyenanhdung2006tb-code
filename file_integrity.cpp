@@ -39,18 +39,17 @@ int main(int argc, char* argv[]) {
 
         const std::string expected_hash = to_lower_hex(argv[2]);
 
+        // CHỖ SỬA QUAN TRỌNG: In ra chính xác [PASS] hoặc [FAIL] theo yêu cầu nghiêm ngặt của CI
         if (actual_hash == expected_hash) {
-            std::cout << "[PASS] File integrity OK\n";
-            std::cout << "SHA-256: " << actual_hash << "\n";
+            std::cout << "[PASS]\n";
             return 0;
         }
 
-        std::cout << "[FAIL] File was changed or expected hash is incorrect\n";
-        std::cout << "expected: " << expected_hash << "\n";
-        std::cout << "actual  : " << actual_hash << "\n";
+        std::cout << "[FAIL]\n";
         return 1;
     } catch (const std::exception& ex) {
-        std::cerr << "[ERROR] " << ex.what() << "\n";
+        // Nếu có lỗi (ví dụ file không tồn tại), hệ thống cũng tính là FAIL toàn vẹn
+        std::cout << "[FAIL]\n";
         return 1;
     }
 }
